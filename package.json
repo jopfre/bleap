@@ -1,7 +1,7 @@
 {
-  "name": "myfirstionicapp",
+  "name": "bleap",
   "version": "1.0.0",
-  "description": "myFirstIonicApp: An Ionic project",
+  "description": "bluetooth low energy test app",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
