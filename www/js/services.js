@@ -23,4 +23,33 @@ angular.module('starter.services', [])
       return friends[friendId];
     }
   }
+})
+.factory('Beacons', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var beacons = [
+    { 
+      uuid: 'EBEFD083-70A2-47C8-9837-E7B5634DF524',
+      identifier:'jaalee',
+      minor: 65,
+      major: 2 
+    },
+    { 
+      uuid: '1',
+      identifier:'test',
+      minor: 1,
+      major: 1 
+    }
+  ];
+
+  return {
+    all: function() {
+      return beacons;
+    },
+    get: function(beaconIdentifier) {
+      // Simple index lookup
+      return beacons[beaconIdentifier];
+    }
+  }
 });

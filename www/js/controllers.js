@@ -12,4 +12,12 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
+})
+
+.controller('BeaconsCtrl', function($scope, Beacons) {
+  $scope.beacons = Beacons.all();
+})
+
+.controller('BeaconDetailCtrl', function($scope, $stateParams, Beacons) {
+  $scope.beacon = Beacons.get($stateParams.beaconIdentifier);
 });
