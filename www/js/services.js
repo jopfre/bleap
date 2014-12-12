@@ -29,15 +29,15 @@ angular.module('starter.services', [])
 
   // Some fake testing data
   var beacons = [
-    { 
-      uuid: 'EBEFD083-70A2-47C8-9837-E7B5634DF524',
+    { id: 0,
       identifier:'jaalee',
+      uuid: 'EBEFD083-70A2-47C8-9837-E7B5634DF524',
       minor: 65,
       major: 2 
     },
-    { 
-      uuid: '1',
+    { id: 1,
       identifier:'test',
+      uuid: '1',
       minor: 1,
       major: 1 
     }
@@ -47,9 +47,9 @@ angular.module('starter.services', [])
     all: function() {
       return beacons;
     },
-    get: function(beaconIdentifier) {
+    get: function(beaconId) {
       // Simple index lookup
-      return beacons[beaconIdentifier];
+      return beacons[beaconId];
     }
   }
 });

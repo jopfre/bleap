@@ -8,8 +8,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
+  $scope.friend = Friends.get($stateParams.friendId);})
 
 .controller('AccountCtrl', function($scope) {
 })
@@ -19,5 +18,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('BeaconDetailCtrl', function($scope, $stateParams, Beacons) {
-  $scope.beacon = Beacons.get($stateParams.beaconIdentifier);
+  // $scope.beacon = $stateParams.beaconId;
+  $scope.beacon = Beacons.get($stateParams.beaconId);
+
 });

@@ -159,7 +159,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     .state('tab.beacon-detail', {
-      url: '/beacon/:beaconIdentifier',
+      url: '/beacon/:beaconId',
       views: {
         'tab-beacons': {
           templateUrl: 'templates/beacon-detail.html',
